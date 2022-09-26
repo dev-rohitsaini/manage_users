@@ -25,7 +25,6 @@ const UserData = ({ user_id }) => {
 
   if (Object.keys(data).length === 0) return "No data Found";
 
-  console.log(data);
   return (
     <React.Fragment>
       <div className="container" key={data?.data?.id}>
