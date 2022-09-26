@@ -1,19 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-import Users from './Components/Users';
-import User from './Components/User';
+import logo from "./logo.svg";
+import "./App.css";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import User from "./Components/User";
 function App() {
-  const queryClient = new QueryClient()
+  const queryClient = new QueryClient();
   return (
     <div className="App">
-        <QueryClientProvider client={queryClient}>
-      
-       {/* <Users /> */}
-       <User />
-
-     </QueryClientProvider>
-   
+      <QueryClientProvider client={queryClient}>
+        <User />
+      </QueryClientProvider>
     </div>
   );
 }
