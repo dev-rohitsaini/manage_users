@@ -30,17 +30,17 @@ const UserData = ({ user_id }) => {
     <React.Fragment>
       <div className="container" key={data?.data?.id}>
         <div className="row ">
-          <div className="col-4 cont">Name</div>
+          <div className="col-4 cont">Name :</div>
           <div className="col-4 cont"><strong>
             {data?.data?.first_name + " " + data?.data?.last_name}</strong>
           </div>
           <div className="col-4 cont">
             <img src={data?.data?.avatar} alt="profile image" />
           </div>
-          <div className="col-4 cont">Email</div>
+          <div className="col-4 cont">Email :</div>
           <div className="col-4 cont"><strong>{data?.data?.email}</strong></div>
           <div className="col-4 cont">Profile Picture</div>
-          <div className="col-4 cont">Description</div>
+          <div className="col-4 cont">Description :</div>
           <div className="col-8 cont">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
             neque ac nisl molestie lobortis. Vivamus at nisl ac nisi blandit
